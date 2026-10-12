@@ -22,7 +22,7 @@
 
 <div class="lang" id="tr">
 <h1>UnvPlatform QualityOS — Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 13 Eylül 2026</p>
+<p class="muted">Son güncelleme: 12 Ekim 2026</p>
 
 <h2>Özet</h2>
 <p>QualityOS, yükseköğretim kurumları için bir <strong>kalite yönetim sistemi</strong>dir.
@@ -41,8 +41,8 @@ sitelerinde eşleştiren hiçbir tanımlayıcı toplanmaz ve hiçbir reklam ağ�
 <h2>Topladığımız veriler</h2>
 <table>
 <tr><th>Veri</th><th>Neden</th><th>Üçüncü tarafa gidiyor mu</th></tr>
-<tr><td>E-posta adresi</td><td>Hesap ve giriş; kurumunuzun kimlik sağlayıcısından gelir</td><td>Hayır</td></tr>
-<tr><td>Kullanıcı içeriği (belge, tarama, görev, süreç kaydı)</td><td>Ürünün işlevi</td><td>Hayır</td></tr>
+<tr><td>E-posta adresi</td><td>Hesap ve giriş; kurumunuzun kimlik sağlayıcısından gelir</td><td>Yalnız giriş e-postalarını (giriş bağlantısı, parola sıfırlama) göndermek için e-posta hizmeti sağlayıcımıza (Resend)</td></tr>
+<tr><td>Kullanıcı içeriği (belge, tarama, görev, süreç kaydı)</td><td>Ürünün işlevi</td><td>Varsayılan olarak hayır. Yalnız kurumunuz yapay zekâ özelliklerini açarsa, o özelliğin kullandığı içerik kurumunuzun seçtiği model sağlayıcısına gönderilir (aşağıya bakın)</td></tr>
 <tr><td>Tanımlayıcılar (kullanıcı kimliği, oturum belirteci)</td><td>Kimlik doğrulama ve oturum</td><td>Hayır</td></tr>
 <tr><td>Kamera</td><td>Yalnız siz başlattığınızda, belge taramak için</td><td>Hayır</td></tr>
 </table>
@@ -81,8 +81,28 @@ de aynı akış bulunur.</p>
 saklama yükümlülüğü bulunan kalite kayıtlarını silmez.</p>
 
 <h2>Veri nerede işlenir</h2>
-<p>Veriler kurumunuz için çalıştırdığımız sunucularda işlenir. Üçüncü taraf reklam, analitik
-veya profilleme hizmetlerine veri aktarılmaz.</p>
+<p>Veriler, kurumunuz için çalıştırdığımız sunucularda işlenir. Bu sunucular
+<strong>Hetzner Online GmbH</strong>'ye ait bir veri merkezinde, <strong>Almanya'da (Nürnberg)</strong>
+bulunur; yani verileriniz <strong>Türkiye dışında</strong> işlenir. Belgelerdeki yazının okunması (OCR)
+da bu sunucularda yapılır; bunun için dış bir hizmete veri gönderilmez.</p>
+
+<h2>Hizmet sağlayıcılar</h2>
+<p>Hizmeti çalıştırmak için yalnız aşağıdaki sağlayıcılarla çalışırız:</p>
+<table>
+<tr><th>Sağlayıcı</th><th>Ne için</th><th>Hangi veri</th></tr>
+<tr><td>Hetzner Online GmbH (Almanya)</td><td>Sunucu barındırma</td><td>Hizmetteki tüm veri</td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Ağ ve güvenlik: uygulamanın sunucumuza olan bağlantısı Cloudflare üzerinden geçer</td><td>Bağlantı sırasında aktarılan veri ve IP adresi</td></tr>
+<tr><td>Resend</td><td>Giriş e-postalarının gönderimi</td><td>E-posta adresi ve e-postanın içeriği</td></tr>
+</table>
+
+<h2>Yapay zekâ özellikleri</h2>
+<p>Yapay zekâ özellikleri (ör. rapor taslağı oluşturma) <strong>varsayılan olarak kapalıdır</strong>.
+Kurumunuz bu özellikleri açmaya ve hangi model sağlayıcısının (ör. OpenAI, Anthropic, Microsoft Azure
+OpenAI, Google Gemini) kullanılacağına karar verebilir. Açılırsa, yalnız ilgili özelliğin kullandığı
+içerik o sağlayıcıya gönderilir ve uygulama her kullanımdan önce <strong>açık onayınızı ister</strong>; model tanımlı değilse özellik tamamen kapalıdır. Hangi sağlayıcının
+kullanıldığını kurumunuzdan öğrenebilirsiniz.</p>
+
+<p>Üçüncü taraf reklam, analitik veya profilleme hizmetlerine veri aktarılmaz.</p>
 
 <h2>İletişim</h2>
 <p>Sorularınız için: <a href="mailto:uc.erim@gmail.com">uc.erim@gmail.com</a></p>
@@ -90,7 +110,7 @@ veya profilleme hizmetlerine veri aktarılmaz.</p>
 
 <div class="lang" id="en">
 <h1>UnvPlatform QualityOS — Privacy Policy</h1>
-<p class="muted">Last updated: 13 September 2026</p>
+<p class="muted">Last updated: 12 October 2026</p>
 
 <h2>Summary</h2>
 <p>QualityOS is a <strong>quality management system</strong> for higher education institutions.
@@ -109,8 +129,8 @@ other companies' apps or websites, and we send data to no ad network.</p>
 <h2>Data we collect</h2>
 <table>
 <tr><th>Data</th><th>Purpose</th><th>Shared with third parties</th></tr>
-<tr><td>Email address</td><td>Account and sign-in; provided by your institution's identity provider</td><td>No</td></tr>
-<tr><td>User content (documents, scans, tasks, process records)</td><td>Core product functionality</td><td>No</td></tr>
+<tr><td>Email address</td><td>Account and sign-in; provided by your institution's identity provider</td><td>Only to our email service provider (Resend), to send sign-in emails (sign-in link, password reset)</td></tr>
+<tr><td>User content (documents, scans, tasks, process records)</td><td>Core product functionality</td><td>Not by default. Only if your institution turns on AI features is the content used by that feature sent to the model provider your institution chooses (see below)</td></tr>
 <tr><td>Identifiers (user id, session token)</td><td>Authentication and session</td><td>No</td></tr>
 <tr><td>Camera</td><td>Only when you start it, to scan documents</td><td>No</td></tr>
 </table>
@@ -148,8 +168,27 @@ and has a cancellation window. Data export is on the same screen. The same flow 
 delete quality records the institution is legally required to retain.</p>
 
 <h2>Where data is processed</h2>
-<p>Data is processed on servers we operate for your institution. No data is transferred to
-third-party advertising, analytics or profiling services.</p>
+<p>Data is processed on servers we operate for your institution. These servers are located in a
+data centre owned by <strong>Hetzner Online GmbH</strong> in <strong>Germany (Nuremberg)</strong>;
+your data is therefore processed <strong>outside Turkey</strong>. Text recognition (OCR) on documents
+also runs on these servers; no data is sent to an external service for it.</p>
+
+<h2>Service providers</h2>
+<p>We work only with the following providers to run the service:</p>
+<table>
+<tr><th>Provider</th><th>Purpose</th><th>Data</th></tr>
+<tr><td>Hetzner Online GmbH (Germany)</td><td>Server hosting</td><td>All data in the service</td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Network and security: the app's connection to our servers passes through Cloudflare</td><td>Data transmitted during the connection and IP address</td></tr>
+<tr><td>Resend</td><td>Sending sign-in emails</td><td>Email address and email content</td></tr>
+</table>
+
+<h2>AI features</h2>
+<p>AI features (e.g. drafting a report) are <strong>off by default</strong>. Your institution may turn
+them on and decide which model provider is used (e.g. OpenAI, Anthropic, Microsoft Azure OpenAI,
+Google Gemini). If turned on, only the content used by that feature is sent to that provider, and the
+app asks for your <strong>explicit consent</strong> before each use; if no model is configured, the feature is fully disabled. You can ask your institution which provider is used.</p>
+
+<p>No data is transferred to third-party advertising, analytics or profiling services.</p>
 
 <h2>Contact</h2>
 <p>Questions: <a href="mailto:uc.erim@gmail.com">uc.erim@gmail.com</a></p>
